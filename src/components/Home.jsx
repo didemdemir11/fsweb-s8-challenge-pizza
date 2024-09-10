@@ -7,9 +7,9 @@ export default function Home() {
     <div className='hero'>
       <div className='hero-content'>
         <img src={logo} alt="Teknolojik Yemekler" className='logo' />
-        <h1 className='main-heading'>KOD ACIKTIRIR PİZZA,DOYURUR</h1>
+        <h1 className='main-heading'>KOD ACIKTIRIR <br/> PİZZA, DOYURUR</h1>
          <Link to="/siparis-formu"> 
-          <button className='order-button'>Acıktım</button>
+          <button className='order-button'>ACIKTIM</button>
         </Link>
       </div>
      
