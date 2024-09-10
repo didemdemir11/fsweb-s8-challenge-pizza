@@ -6,10 +6,11 @@ export default function Header() {
     const location = useLocation();
   return (
     <header className='header'>
-      <img src={logo} alt="Teknolojik Yemekler" className='logo' />
+      <img src={logo} alt="Teknolojik Yemekler" className='logo-order' />
       {location.pathname === '/siparis-formu' && (
         <nav>
-            <span>Ana Sayfa</span> &gt; <span>Sipariş Oluştur</span>
+            <span className="breadcrumb-light">Ana Sayfa</span> &gt;
+            <span className="breadcrumb-dark">Sipariş Oluştur</span>
         </nav>
       )}
     </header>

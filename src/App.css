@@ -60,7 +60,39 @@ body {
   transition: background-color 0.3s ease;
   border-radius: 50px;
 }
+.header {
+  display: flex;
+  background-color: #CE2829;
+  text-align: center;
+  position: relative;
+  padding: 45px;
+  align-content: center;
+  flex-direction: column;
+}
 
+.logo-order {
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 45px;
+}
+nav {
+  font-family: 'Barlow';
+  width:  600px;
+  align-self: center;
+  text-align: left;
+  font-size: 1rem;
+  
+  
+}
+.breadcrumb-light {
+  color: rgba(255, 255, 255, 0.6)
+}
+.breadcrumb-dark {
+  color: white;
+  font-weight: bold;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
