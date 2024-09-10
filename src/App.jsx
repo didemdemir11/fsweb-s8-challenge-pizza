@@ -5,13 +5,13 @@ import Header from './components/Header'
 import SiparisFormu from './components/SiparisFormu'
 import Home from './components/Home'
 import Success from './components/Success'
-import { useLocation } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
      <Router>
+     
       <Header/>
       <Switch>
         <Route path="/" exact component={Home}/>
