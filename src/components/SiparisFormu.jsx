@@ -11,6 +11,7 @@ import {
   } from 'reactstrap';
   import axios from 'axios';
 import Header from './Header';
+import { useHistory} from 'react-router-dom';
 
 export default function SiparisFormu() {
     const [formData, setFormData] = useState({
@@ -30,6 +31,7 @@ export default function SiparisFormu() {
     const thicknessOptions = ['İnce Hamur', 'Kalın Hamur','Glutensiz Hamur'];
     const toppingPrice = 5;
     const sizes = ['Küçük', 'Orta', 'Büyük'];
+    const history = useHistory();
     
     useEffect(()=> {
         const validationErrors = validate();
@@ -60,7 +62,7 @@ export default function SiparisFormu() {
 
     const validate = () => {
         const newErrors = {};
-        if (formData.name<3){
+        if (formData.name.length<3){
             newErrors.name = 'İsim en az 3 karakter olmalı.';
         }
         if (!formData.size) {
@@ -84,7 +86,7 @@ export default function SiparisFormu() {
             try {
                 const response = await axios.post('https://reqres.in/api/pizza', formData);
                 console.log('Siparişiniz başarıyla gönderildi:' , response.data);
-                alert('Siparişiniz başarıyla gönderildi!')
+                history.push('/siparis-onay')
                 setFormData({
                     name: '',
                     size: '',
@@ -96,7 +98,6 @@ export default function SiparisFormu() {
                 setTotalPrice(0);
             } catch(error) {
                 console.error('Siparişiniz gönderilirken hata oluştu:', error);
-                alert('Siparişiniz gönderilirken bir hata oluştu.');
             } 
         } else {
             setErrors(validationErrors);
