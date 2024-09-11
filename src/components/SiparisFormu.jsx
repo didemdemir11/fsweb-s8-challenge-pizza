@@ -55,6 +55,7 @@ export default function SiparisFormu() {
     };
 
     const calculateTotal = () => {
+        if(!formData.size) return 0;
         const basePrice = formData.size === 'Küçük' ? 20 : formData.size === 'Orta' ? 30 : 40;
         const toppingCost = formData.toppings.length * toppingPrice;
         return (basePrice + toppingCost) * formData.quantity;
