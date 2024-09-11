@@ -1,10 +1,9 @@
-* {
-  border: palegreen solid;
-}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Barlow';
 }
 .hero {
   background-image: url('Assets/Iteration-1-assets/home-banner.png');
