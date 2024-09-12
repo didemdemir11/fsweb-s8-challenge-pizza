@@ -12,6 +12,7 @@ import {
   import axios from 'axios';
 import Header from './Header';
 import { useHistory} from 'react-router-dom';
+import Footer from './Footer'
 
 export default function SiparisFormu() {
     const [formData, setFormData] = useState({
@@ -221,6 +222,7 @@ export default function SiparisFormu() {
           </Button>
         </Form>
         </div>
+        <Footer/>
     </Container>
   );
 }

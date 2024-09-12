@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '/Assets/Iteration-1-assets/logo.svg'
+import Footer from './Footer'
 
 export default function Home() {
   return (
@@ -93,7 +94,7 @@ export default function Home() {
         </div>
         </div>
       </section>
-     
+      <Footer/>
     </div>
   )
 }
