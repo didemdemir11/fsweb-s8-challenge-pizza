@@ -83,6 +83,13 @@ html,body {
   padding: 20px;
   text-align: center;
 }
+.menu-icon-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .menu-icon-item img{
   width: 40px;
   margin-right: 10px;
@@ -165,6 +172,10 @@ p{
   word-wrap: break-word;
   font-size: 16vw;
   margin-top: 0;
+}
+.menu-icon-item{
+  flex-basis: calc(50% - 30px);
+  margin-bottom: 20px;
 }
 }
 
