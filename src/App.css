@@ -1,76 +1,97 @@
 *{
   border: solid rgb(192, 192, 123);
 }
-body {
+html,body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow';
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  
 }
 .hero {
   background-image: url('Assets/Iteration-1-assets/home-banner.png');
   background-size: cover;
   background-position: center;
   background-position-y: 0px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #CE2829;
   position: relative;
+  min-height: 100vh;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0px;
-  height: 100%;
+  gap: 0px;
+  margin-top: 45px;
 
 }
-.hero-content .row{
-  padding: 0;
-  margin-left: 0;
-  margin-left: 0;
-}
+
 .logo {
-  width: 350px;
-  margin-bottom: 20px;
+  width: 50%;
 }
 
 .sub-heading-1{
   color:#FDC913;
   font-family:'Satisfy';
+  margin-top: 40px ;
+  padding: 0;
+  font-size: 1.1rem;
 }
 .main-heading {
   font-family: "Roboto Condensed";
-  line-height: 92px;
-  font-size: 4rem;
+  font-size: 3.8rem;
   color:white;
   text-align: center;
   font-weight: 300;
+  margin-top: -20px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.order-button{
+.aciktim-button{
   background-color: #FDC913;
-  width: 194px;
-  height: 56px;
   color: black;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.2rem;
+  padding: 10px 40px;
+  font-size: 1rem;
   font-family: "Barlow";
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 50px;
+  margin-top: 5px; 
 }
 .body-content{
-  padding: 50px 0;
+  min-height: 100vh;
+  padding: 0;
   background-color: white;
   min-height: 80vh;
+}
+.menu-icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:30px;
+  padding: 20px;
+  text-align: center;
+}
+.menu-icon-item img{
+  width: 40px;
+  margin-right: 10px;
+}
+.menu-icon-item a{
+  font-family:'Barlow';
+  color:black;
+  text-align: center;
+  text-decoration: none;
 }
 .footer{
   background-color: black;
@@ -131,25 +152,19 @@ p{
   justify-content: center;
   align-items: center;
 }
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media (max-width: 480px) {
+.logo{
+  width: 70%;
+  margin-bottom: 20px;
+}
+.sub-heading-1{
+  display: none;
+}
+.main-heading{
+  word-wrap: break-word;
+  font-size: 16vw;
+  margin-top: 0;
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

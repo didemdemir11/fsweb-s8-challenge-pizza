@@ -14,7 +14,7 @@ export default function Home() {
          <p className="sub-heading-1">fırsatı kaçırma</p>
          <h1 className='main-heading'>KOD ACIKTIRIR <br/> PİZZA, DOYURUR</h1>
          <Link to="/siparis-formu"> 
-            <Button className='order-button'>ACIKTIM</Button>
+            <Button className='aciktim-button'>ACIKTIM</Button>
           </Link>
         </Col>
       </Row>
@@ -23,12 +23,13 @@ export default function Home() {
     <Container className='body-content'>
         <Row className='menu-icons'>
           
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/1.svg" alt="Kore"/><a href="#">YENİ! Kore</a></Col>
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza"/><a href="#">Pizza</a></Col>
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/3.svg" alt="Burger"/><a href="#">Burger</a></Col>
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/4.svg" alt="Kızartmalar"/><a href="#">Kızartmalar</a></Col>
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/5.svg" alt="Fast Food"/><a href="#">Fast Food</a></Col>
-            <Col xs="2" className="text-center"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Gazlı İçecek"/><a href="#">Gazlı İçecek</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/1.svg" alt="Kore"/>
+            <a href="#">YENİ! Kore</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza"/><a href="#">Pizza</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/3.svg" alt="Burger"/><a href="#">Burger</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Kızartmalar"/><a href="#">Kızartmalar</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/5.svg" alt="Fast Food"/><a href="#">Fast Food</a></Col>
+            <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Gazlı İçecek"/><a href="#">Gazlı İçecek</a></Col>
       
         </Row>
         <div className='announcement box'>
