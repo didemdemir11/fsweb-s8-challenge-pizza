@@ -34,7 +34,7 @@ export default function SiparisFormu({setOrderData, setErrorMessage}) {
     const toppingsOptions =[ 'Pepperoni', 'Tavuk Izgara' , 'Mısır', 'Sarımsak','Ananas', 'Sosis', 'Soğan', 'Sucuk', 'Biber', 'Kabak', 'Kanada Jambonu', 'Domates','Jalepeno'];
     const thicknessOptions = ['İnce Hamur', 'Kalın Hamur','Glutensiz Hamur'];
     const toppingPrice = 5;
-    const sizes = ['Küçük', 'Orta', 'Büyük'];
+    const sizes = ['S', 'M', 'L'];
     const history = useHistory();
     const location = useLocation();
     
@@ -61,7 +61,7 @@ export default function SiparisFormu({setOrderData, setErrorMessage}) {
 
     const calculateTotal = () => {
         if(!formData.size) return 0;
-        const basePrice = formData.size === 'Küçük' ? 20 : formData.size === 'Orta' ? 30 : 40;
+        const basePrice = formData.size === 'S' ? 20 : formData.size === 'M' ? 30 : 40;
         const toppingCost = formData.toppings.length * toppingPrice;
         return (basePrice + toppingCost) * formData.quantity;
     }

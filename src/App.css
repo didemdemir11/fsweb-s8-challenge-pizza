@@ -35,6 +35,14 @@ html,body {
   max-width: 600px;
   margin: 0 auto; 
 }
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+.required-star {
+  color: red;
+}
 .hero {
   background-image: url('Assets/Iteration-1-assets/home-banner.png');
   background-size: cover;
