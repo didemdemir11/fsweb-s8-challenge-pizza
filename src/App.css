@@ -111,7 +111,10 @@ html,body {
   justify-content: center;
   align-items: stretch;
   width: 100%;
+  margin: 0 auto;
   height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .announcement-box{
   background-size: cover;
@@ -336,6 +339,8 @@ p{
   flex-direction: column; 
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .announcement-wrapper {
@@ -357,6 +362,24 @@ p{
   margin: 0;
   padding: 0;
 }
+.announcement-title-lezzetus,
+  .announcement-title-hackathlon {
+    font-size: 5vw; 
+    text-align: left; 
+    padding-left: 10px;
+  }
+.announcement-desc {
+    font-size: 4vw; 
+    text-align: left; 
+    padding-left: 10px;
+  }
+  .sub-order-button {
+    font-size: 4vw; 
+    aspect-ratio: 34%;
+    padding: 0;
+    width: 50%; 
+    display: block; 
+  }
 .sub-heading-2 h2 {
   text-align: center;
   padding: 25px;
