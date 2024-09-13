@@ -214,7 +214,8 @@ fieldset {
   color: #CE2829;
   padding: 7px 15px;
   font-weight: 600;
-
+  border: none;
+  cursor: pointer;
 }
 .sub-heading-2{
   display: flex;

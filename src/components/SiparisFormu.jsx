@@ -68,7 +68,7 @@ export default function SiparisFormu({setOrderData, setErrorMessage}) {
 
     const validate = () => {
         const newErrors = {};
-        if (formData.name.length<3){
+        if (formData.name.trim().length<3){
             newErrors.name = 'İsim en az 3 karakter olmalı.';
         }
         if (!formData.size) {
