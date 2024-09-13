@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <Container fluid className='hero'>
-      <Row className='hero-content' noGutters>
+      <Row className='hero-content'>
         <Col xs="12" className="text-center">      
          <img src={logo} alt="Teknolojik Yemekler" className='logo' />
          <p className="sub-heading-1">fırsatı kaçırma</p>
@@ -32,51 +32,49 @@ export default function Home() {
             <Col xs="6" md="auto" className="menu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Gazlı İçecek"/><a href="#">Gazlı İçecek</a></Col>
       
         </Row>
-        <div className='announcement box'>
-          <Row className='announcement content'>
-            <Col md="6" className="text-center">
-            <img src="/Assets/Iteration-2-aseets/cta/kart-1.png" alt="Lezzetus"/>
-            <h2>Özel Lezzetus</h2>
-            <p>Position: Absolute Acı Burger</p>
-            <Link to="/siparis-formu"> 
+
+       <div className='announcement container'>
+          <Row className='announcement-content'>
+            <Col md="6" className="announcement-box box-1">
+              <h2 className='announcement-title-lezzetus'>Özel <br/>Lezzetus</h2>
+              <p className="announcement-desc">Position: Absolute Acı Burger</p>
+              <Link to="/siparis-formu"> 
               <Button className='sub-order-button'>SİPARİŞ VER</Button>
-            </Link>
+              </Link>
+            </Col>
+
+            <Col md="6" className="announcement-wrapper">
+              <div className="announcement-box box-2">
+              <h2 className='announcement-title-hackathlon'>Hackathlon Burger Menü</h2>
+              <Link to="/siparis-formu"> 
+              <Button className='sub-order-button'>SİPARİŞ VER</Button>
+              </Link>
+              </div>
+              <div className="announcement-box box-3">
+              <p className="announcement-desc special-desc"><span className='highlighted'>Çoooook</span> hızlı npm gibi kurye</p>
+              <Link to="/siparis-formu"> 
+                <Button className='sub-order-button'>SİPARİŞ VER</Button>
+              </Link>
+              </div>
             </Col>
           </Row>
-          <Row className='announcement content'>
-            <Col md="3" className="text-center">
-             <img src="/Assets/Iteration-2-aseets/cta/kart-2.png" alt="Hackathlon"/>
-             <h2>Hackathlon Burger Menü</h2>
-             <Link to="/siparis-formu"> 
-               <Button className='sub-order-Button'>SİPARİŞ VER</Button>
-             </Link>
-            </Col>
-          </Row>
-          <Row className='announcement content'>
-            <Col md="3" className="text-center">
-             <img src="/Assets/Iteration-2-aseets/cta/kart-3.png" alt="npmKurye"/>
-             <h2>Özel Lezzetus</h2>
-             <p> <span>Çoooook</span> hızlı npm gibi kurye</p>
-             <Link to="/siparis-formu"> 
-               <Button className='sub-order-Button'>SİPARİŞ VER</Button>
-             </Link>
-            </Col>
-          </Row>
-          <div className="sub-heading-2">
+       </div>
+       <div className="sub-heading-2">
             <p className="italic-text">en çok paketlenen menüler</p>
             <h2>Acıktıran Kodlara Doyuran Lezzetler</h2>
-          </div>
+        </div>
 
-          <nav className='eng-menu-icons'>
-          <ul>
-            <li><img src="/Assets/Iteration-2-aseets/icons/1.svg" alt="Ramen"/><a href="#">Ramen</a></li>
-            <li><img src="/Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza"/><a href="#">Pizza</a></li>
-            <li><img src="/Assets/Iteration-2-aseets/icons/3.svg" alt="Burger"/><a href="#">Burger</a></li>
-            <li><img src="/Assets/Iteration-2-aseets/icons/4.svg" alt="French Fries"/><a href="#">French Fries</a></li>
-            <li><img src="/Assets/Iteration-2-aseets/icons/5.svg" alt="Fast Food"/><a href="#">Fast Food</a></li>
-            <li><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Soft Drink"/><a href="#">Soft Drink</a></li>
-          </ul>
-        </nav>
+        <Row className='eng-menu-icons'>
+          
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/1.svg" alt="Kore"/>
+          <a href="#">Ramen</a></Col>
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza"/><a href="#">Pizza</a></Col>
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/3.svg" alt="Burger"/><a href="#">Burger</a></Col>
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="French Fries"/><a href="#">French</a></Col>
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/5.svg" alt="Fast Food"/><a href="#">Fast Food</a></Col>
+          <Col xs="6" md="auto" className="engmenu-icon-item"><img src="/Assets/Iteration-2-aseets/icons/6.svg" alt="Soft Drink"/><a href="#">Soft Drink</a></Col>
+    
+      </Row>
         <div className="menu-item container">
           <div className="menu-item-content">
             <img src="\assets\Iteration-2-aseets\pictures\food-1.png" alt="pizza1"/>
@@ -106,7 +104,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        </div>
+       
       </Container>
       
       <Footer/>
