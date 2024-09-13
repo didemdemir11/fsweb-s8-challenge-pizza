@@ -3,7 +3,8 @@ import React from "react";
 export default function Footer() {
     return (
     <footer className="footer">
-        <div className="company-info">
+       <div className="footer-container">
+       <div className="company-info">
          <img src="/Assets/Iteration-2-aseets/footer/logo-footer.svg" className="logo" alt="Pizza Mobil Logo"/>
          <div className="company-info-address">
             <img src="/Assets/Iteration-2-aseets/footer/icons/icon-1.png"/> 
@@ -40,8 +41,12 @@ export default function Footer() {
         <img src="/Assets/Iteration-2-aseets/footer/insta/li-4.png" alt="insta-photo5"/>
         <img src="/Assets/Iteration-2-aseets/footer/insta/li-5.png" alt="insta-photo6"/>
       </div>
-      <div className="closing-label">
-        <p>© 2023 Teknolojik Yemekler. <span> <a href="#" className="fa fa-twitter"></a> </span></p>
+     
+       </div>
+       <div className="footer-divider"></div>
+       <div className="closing-label">
+        <p>© 2023 Teknolojik Yemekler.</p>
+         <a href="#" className="fa fa-twitter"></a>
       </div> 
     </footer>
     )

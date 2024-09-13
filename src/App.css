@@ -1,6 +1,4 @@
-*{
-  border: solid rgb(192, 192, 123);
-}
+
 html,body {
   margin: 0;
   padding: 0;
@@ -33,7 +31,6 @@ html,body {
   margin-top: 45px;
 
 }
-
 .logo {
   width: 50%;
 }
@@ -242,10 +239,7 @@ html,body {
   text-decoration: none;
   padding-right: 5px;
 }
-.footer{
-  background-color: black;
 
-}
 .header {
   display: flex;
   background-color: #CE2829;
@@ -299,6 +293,74 @@ html,body {
   text-align: right;
 }
 
+.footer{
+  background-color: black;
+  color: white;
+}
+.footer-container{
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.company-info{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px;
+  
+}
+
+.quick-menu{
+  font-family: 'Barlow';
+  font-weight: 500;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+.quick-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.quick-menu ul a {
+  display: block; 
+  margin: 10px 0; 
+  text-decoration: none;
+  color: white;
+}
+.social-media {
+  font-family: 'Barlow';
+  font-weight: 400;
+  padding-left: 20px;
+  
+}
+
+.footer-divider {
+  width: 100%;
+  border-top: 0.5px solid white; 
+  margin: 20px 0; 
+}
+.closing-label{
+  font-family: 'Barlow';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+.closing-label p {
+  margin: 0;
+}
+.closing-label .fa-twitter {
+  color: white; 
+  text-decoration: none;
+ 
+}
 h2{
   font-family:'Barlow' ;
 }
@@ -306,6 +368,8 @@ h2{
 p{
   font-family: 'Barlow';
 }
+
+
 .end-page {
   background-color:#CE2829;
   background-size: cover;
@@ -404,6 +468,10 @@ p{
 
 .price-label {
   font-size: 1rem; 
+}
+.footer-container {
+  flex-direction: column; 
+  align-items: center; 
 }
 
 }
